@@ -5,35 +5,35 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotReservations from '@/images/screenshots/mobile-reservation-min.png'
+import screenshotMobileApp from '@/images/screenshots/mobile-app.png'
+import screenshotExtenable from '@/images/screenshots/mobile-extenable.png'
+import screenshotPushNotifications from '@/images/screenshots/mobile-push-notification-min.png'
 
 const features = [
   {
     title: 'Branded mobile app',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "Your imagery, your copy. This is your mobile app for your venue. We manage all the technical implementation.",
+    image: screenshotMobileApp,
   },
   {
-    title: 'Groups & permissions',
+    title: 'Manage reservations',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Members can reserve tables, book classes, and buy tickets. You can manage all of this from your Seven Rooms dashboard.",
+    image: screenshotReservations,
   },
   {
     title: 'Push notifications',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      "Send push notifications to your members to keep them up to date with your latest news and offers.",
+    image: screenshotPushNotifications,
   },
   {
     title: 'Extendable experience',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'Add your own options to your app, such as links, private information, a loyalty program or a member directory.',
+    image: screenshotExtenable,
   },
 ]
 
@@ -75,8 +75,7 @@ export function PrimaryFeatures() {
             Everything you need for a vibrant membership.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Starting with your mobile app as the first stop in your brand experience.
           </p>
         </div>
         <Tab.Group
@@ -134,13 +133,13 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 md:mt-20 md:w-[45rem] overflow-hidden rounded-xlshadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
-                        className="w-full"
+                        className="h-[52rem] object-contain object-center lg:object-left"
                         src={feature.image}
                         alt=""
                         priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 35rem"
                       />
                     </div>
                   </Tab.Panel>

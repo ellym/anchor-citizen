@@ -81,7 +81,7 @@ function MobileNavigation() {
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
             <MobileNavLink href="#faq">FAQs</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
+            <MobileNavLink href="/login">Client Sign in</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>

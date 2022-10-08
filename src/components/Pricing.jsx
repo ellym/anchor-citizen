@@ -118,8 +118,8 @@ export function Pricing() {
 
           <Plan
             featured
-            name="Founder Plan"
-            
+            name="Founder Pricing Available"
+            price="Contact Us"
             href="/register"
             features={[
               'Branded mobile app',
