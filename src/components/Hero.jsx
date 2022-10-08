@@ -24,7 +24,7 @@ export function Hero() {
         for private clubs and coworking spaces.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Memberships are a great way to build a community, but they are hard to get right. We are here to help.
+        Memberships are better with community, but that can be hard to get right. Anchor Citizen helps keep your venue engaging.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">Simple pricing. Unlimited members. Inquire today.</Button>
