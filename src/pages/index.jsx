@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
@@ -30,6 +31,16 @@ export default function Home() {
         <Pricing />
         <Faqs />
       </main>
+      <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-885403D879" />
+      <Script id="ga" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-885403D879');
+        `}
+      </Script>
       <Footer />
     </>
   )
