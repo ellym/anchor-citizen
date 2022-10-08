@@ -2,8 +2,8 @@ import Image from 'next/future/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+import logoPershing from '@/images/logos/pershing.png'
+import logoHnt from '@/images/logos/hnt.png'
 
 export function Hero() {
   return (
@@ -31,7 +31,7 @@ export function Hero() {
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
-          Trusted by
+          Trusted by clubs & spaces like
         </p>
         <ul
           role="list"
@@ -39,8 +39,8 @@ export function Hero() {
         >
           {[
             [
-              { name: 'Pershing', logo: logoTransistor },
-              { name: 'Here Nor There', logo: logoTuple },
+              { name: 'Pershing', logo: logoPershing, width: 160 },
+              { name: 'Here Nor There', logo: logoHnt, width: 260 },
             ]
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
@@ -50,7 +50,7 @@ export function Hero() {
               >
                 {group.map((company) => (
                   <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} unoptimized />
+                    <Image src={company.logo} width={company.width} alt={company.name} unoptimized />
                   </li>
                 ))}
               </ul>

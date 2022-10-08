@@ -6,53 +6,48 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'How many members can I have?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Unlimited. We do not have a limit on your membership capacity.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'How many push notifications can I send per month?',
+      answer: 'Unlimited. We do not have a limit on your push notifications.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'Do you integrate with Seven Rooms?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'Yes.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Do you integrate with SimpleTexting.com?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'Yes. We sync your member data directly with SimpleTexting.com.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'Do you integrate with Stripe for membership dues?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'Yup! Members can pay their dues directly through your mobile app.',
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'Do you have a MailChimp integration?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Yes we do!',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'What other apps do you have to add to our account?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'We have apps for showing a daily speakeasy code and another for having an image gallery.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+      question: 'I have an idea for a feature. Can you add it to my club\'s app?',
+      answer: 'Absolutely. Our platform is ripe for customization. We are hear to build the future of membership engagement.',
     },
   ],
 ]
@@ -82,7 +77,7 @@ export function Faqs() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            and we’ll get back to you as soon as we can.
           </p>
         </div>
         <ul
