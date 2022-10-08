@@ -10,7 +10,7 @@ export default function Register() {
   return (
     <>
       <Head>
-        <title>Sign Up - TaxPal</title>
+        <title>Inquire about pricing - Anchor Citizen</title>
       </Head>
       <AuthLayout>
         <div className="flex flex-col">
@@ -18,11 +18,17 @@ export default function Register() {
             <Logo className="h-10 w-auto" />
           </Link>
           <div className="mt-20">
-            <h2 className="text-lg font-semibold text-gray-900">
-              Get started for free
+            <h1 className="text-2xl font-semibold text-blue-900 underline">
+              <a href="mailto:sales@anchorcitizen.com">sales@anchorcitizen.com</a>
+            </h1>
+            <h2 className="mt-10 text-lg font-semibold text-gray-900">
+              Contact us for pricing
             </h2>
             <p className="mt-2 text-sm text-gray-700">
-              Already registered?{' '}
+              We will get back to you within 1 business day.
+            </p>
+            <p className="mt-10 text-sm text-gray-700">
+              Already a client?{' '}
               <Link
                 href="/login"
                 className="font-medium text-blue-600 hover:underline"
@@ -33,7 +39,7 @@ export default function Register() {
             </p>
           </div>
         </div>
-        <form
+        {/* <form
           action="#"
           className="mt-10 grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2"
         >
@@ -77,10 +83,10 @@ export default function Register() {
             id="referral_source"
             name="referral_source"
           >
-            <option>AltaVista search</option>
-            <option>Super Bowl commercial</option>
-            <option>Our route 34 city bus ad</option>
-            <option>The “Never Use This” podcast</option>
+            <option>Google search</option>
+            <option>Mobile app of club I visited</option>
+            <option>Referral from friend</option>
+            <option>Other</option>
           </SelectField>
           <div className="col-span-full">
             <Button
@@ -90,11 +96,21 @@ export default function Register() {
               className="w-full"
             >
               <span>
-                Sign up <span aria-hidden="true">&rarr;</span>
+                Inquire <span aria-hidden="true">&rarr;</span>
               </span>
             </Button>
+            <p className="mt-10 text-sm text-gray-700">
+              Already registered?{' '}
+              <Link
+                href="/login"
+                className="font-medium text-blue-600 hover:underline"
+              >
+                Sign in
+              </Link>{' '}
+              to your account.
+            </p>
           </div>
-        </form>
+        </form> */}
       </AuthLayout>
     </>
   )

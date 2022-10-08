@@ -107,10 +107,10 @@ export function Pricing() {
               <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-400" />
               <span className="relative">Simple pricing,</span>
             </span>{' '}
-            for all spaces.
+            for every space.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your club or venue is, our software will
+            It doesn’t matter what size your club or venue, our software will
             work well for you.
           </p>
         </div>
