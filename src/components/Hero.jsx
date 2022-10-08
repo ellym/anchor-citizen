@@ -27,7 +27,7 @@ export function Hero() {
         Memberships are a great way to build a community, but they are hard to get right. We are here to help.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Join today</Button>
+        <Button href="/register">Simple pricing. Unlimited members. Inquire today.</Button>
       </div>
       <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
